@@ -1,0 +1,10 @@
+name: exemplo-security-api
+
+services:
+  apache:
+    image: httpd:latest
+    container_name: apache-docker
+    ports:
+    - '80:80'
+    volumes:
+    - ./:/usr/local/apache2/htdocs
